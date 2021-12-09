@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
     Nombre de usuario
     <input type="text"name="nombre" required>
     <br>
@@ -21,10 +20,18 @@
         <option>Soy ingeniero de sistemas.</option>
         </select>
     <br>
-    
-    </form>
     <div>
-         <a href="/Lista.html"><button>Enviar</button></a>
+        <a href="../Lista.html"><button>Enviar</button></a> <button onclick="alertar('Correo enviado exitosamente');">
+           Enviar un correo
+         </button>
+         <script type="text/javascript">
+             function alertar(texto) {
+                alert(texto);
+             }
+         </script>
     </div>
+    
+   
+    
 </body>
 </html>
